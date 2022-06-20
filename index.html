@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic JavaScript Calculator</title>
+</head>
+<body>
+    
+    <script>
+    
+    const control = prompt('Please Enter Any Of The Operator Sign To Use Calculator: (+ for Addition, - for Subtraction, * for Multiplication or / for Division): ');
+    const firstNumber = parseFloat(prompt('Enter the first number: '));
+    const secondNumber = parseFloat(prompt('Enter the second number: '));
+
+    if (control == '+') {
+        result = firstNumber + secondNumber;
+    }
+
+    else if (control == '-') {
+        result = firstNumber - secondNumber;
+    }
+
+    else if (control == '/') {
+        result = firstNumber / secondNumber;
+    }
+
+    else {
+        result = firstNumber * secondNumber;
+    }
+
+    document.write( "Result is " + result);
+    </script>
+</body>
+</html>
